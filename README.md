@@ -11,7 +11,6 @@ A modern Terminal User Interface (TUI) for monitoring Kubernetes and OpenShift c
 
 ## ✨ Features
 
-- 🎨 **Beautiful ASCII Banner** with Unicode characters
 - 🔄 **Context Switching** - Switch between multiple Kubernetes contexts
 - 📊 **Multi-Frame Layout** - Resources, Logs, and Events in separate frames
 - 🌐 **Dual Support** - Works with both Kubernetes and OpenShift clusters
@@ -20,6 +19,7 @@ A modern Terminal User Interface (TUI) for monitoring Kubernetes and OpenShift c
 - 📋 **Event Tracking** - View events related to selected resources
 - 🎨 **Professional Color Scheme** - Easy on the eyes with dark theme
 
+
 ## 🚀 Quick Start
 
 ### Prerequisites
@@ -27,16 +27,14 @@ A modern Terminal User Interface (TUI) for monitoring Kubernetes and OpenShift c
 - Go 1.19 or later
 - Access to a Kubernetes/OpenShift cluster
 - `kubectl` configured with cluster access
+- make sure /kubeconfig accessible from $home
 
 ### Installation
 
 ```bash
 # Clone the repository
 git clone <repository-url>
-cd k8s-monitor
-
-# Build the application
-go build -o k8sgo k8sgo.go
+cd k8sGO
 
 # Run k8sGo
 ./k8sgo
@@ -44,9 +42,20 @@ go build -o k8sgo k8sgo.go
 
 ### Screenshots
 ![Home](img/image.png)
+
 ![resources1](img/resources1.png)
+
 ![resources2](img/resources2.png)
+
 ![resources3](img/resources3.png)
+
+![resources4](resources4.png)
+
+![resources5](resources5.png)
+
+![resources6](resources6.png)
+
+
 ### First Run
 
 1. **Start the application**: `./k8sgo`
@@ -81,12 +90,11 @@ go build -o k8sgo k8sgo.go
 - **`r`** - Refresh current frame
 - **`q`** - Go back to resource selection
 
-## 🏗️ Architecture
+## 🏗️ Tool Overview
 
-### Frame Layout
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                        k8sGo Banner                         │
+│                        k8sGo                          │
 ├─────────────────┬─────────────────┬─────────────────────────┤
 │   Resources     │      Logs       │        Events           │
 │                 │                 │                         │
@@ -127,8 +135,8 @@ export KUBECONFIG=/path/to/your/kubeconfig
 If you have multiple contexts configured, k8sGo will show a selection screen:
 ```
 Select Kubernetes Context:
-▶ kind-dev-cluster (active)
-  kind-int-cluster  
+▶ dev-cluster (active)
+  int-cluster  
   production-cluster
 ```
 
