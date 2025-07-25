@@ -9,6 +9,9 @@
 
 A modern Terminal User Interface (TUI) for monitoring Kubernetes and OpenShift clusters with multi-frame layout, real-time updates, and comprehensive resource management.
 
+![license](https://img.shields.io/badge/license-MIT-purple)
+![localized](https://img.shields.io/badge/localized-100%25-brightgreen)
+
 ## ✨ Features
 
 - 🔄 **Context Switching** - Switch between multiple Kubernetes contexts
