@@ -49,11 +49,11 @@ cd k8sGO
 
 ![resources3](img/resources3.png)
 
-![resources4](resources4.png)
+![resources4](img/resources4.png)
 
-![resources5](resources5.png)
+![resources5](img/resources5.png)
 
-![resources6](resources6.png)
+![resources6](img/resources6.png)
 
 
 ### First Run
