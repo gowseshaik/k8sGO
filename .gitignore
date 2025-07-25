@@ -55,6 +55,7 @@ releases/
 # Logs
 *.log
 logs/
+img/
 
 # Temporary files
 tmp/

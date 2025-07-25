@@ -42,6 +42,11 @@ go build -o k8sgo k8sgo.go
 ./k8sgo
 ```
 
+### Screenshots
+![Home](img/image.png)
+![resources1](img/resources1.png)
+![resources2](img/resources2.png)
+![resources3](img/resources3.png)
 ### First Run
 
 1. **Start the application**: `./k8sgo`
